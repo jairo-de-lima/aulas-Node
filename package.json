@@ -1,21 +1,23 @@
 {
-    "name": "aulas-node",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node --watch server.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "type": "module",
-    "dependencies": {
-        "@prisma/client": "^5.17.0",
-        "cors": "^2.8.5",
-        "express": "^4.19.2"
-    },
-    "devDependencies": {
-        "prisma": "^5.17.0"
-    }
+  "name": "aulas-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build": "prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.17.0"
+  }
 }

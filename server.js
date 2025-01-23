@@ -55,7 +55,10 @@ app.delete("/usuarios/:id", async (req, res) => {
   res.status(200).json({ message: "User deleted successfully" });
 });
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 // http://localhost:3000
 
